@@ -1,8 +1,12 @@
-import React, {Component} from 'react';
-import Style from './style.module.scss'
+import React, { Component } from 'react';
+import './style.modules.scss';
 export default class Login extends Component {
-    render(){
-        
-    }
+    render() {
+        return (
+            <div>
+                登录页
+            </div>
+        )
 
+    }
 }

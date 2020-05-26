@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { Router } from 'react-router';
-import { Redirect,Route,Switch } from 'react-router-dom';
+import { withRouter, Redirect,Route,Switch } from 'react-router-dom';
 
 import Login from './pages/Login';
 import Home from './pages/Home';
 
-
+// const Main = withRouter(props => <Layout {...props} />);
 const BasicRoute = () => (
-    <Main>
+    <Route>
         <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/login" component={Login}></Route>
         </Switch>
-    </Main>
+    </Route>
 )
 
 export default BasicRoute
